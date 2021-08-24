@@ -18,12 +18,10 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 #works
 url = 'https://www.theguardian.com/us-news/2021/aug/23/mark-sanford-republican-anti-trump'
+
+#dont work
 url2 = "https://www.bloomberg.com/news/articles/2020-08-01/apple-buys-startup-to-turn-iphones-into-payment-terminals?srnd=premium"
 #url2 = 'https://www.straitstimes.com/singapore/courts-crime/doing-more-to-keep-child-sex-offenders-from-making-same-mistake'
-article = Article(url2)
-article.download()
-article.parse()
-
 
 
 
@@ -36,17 +34,4 @@ article.parse()
 
 #print(article.keywords)sdadsaddsadsdassaddas
 
-new_words = {
-    'crushes': 10,
-    'beats': 5,
-    'misses': -5,
-    'trouble': -10,
-    'falls': -100,
-}
-
-vader = SentimentIntensityAnalyser()
-
-vader.lexicon.update(new_words)
-
-article.text.apply(vader.polarity_scores)
-
+print(article.text)
