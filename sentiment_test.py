@@ -20,9 +20,6 @@ new_words = {
     'forfeiture': -100,
     'ill-gotten gain':-100,
     'laundering':-100
-
-
-
 }
 
 
